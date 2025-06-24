@@ -20,7 +20,7 @@ $mensagem = $data['mensagem'];
 <h2>Editar Perfil</h2>
 <form method="POST">
     <label for="login">Nome:</label><br>
-    <input type="text" id="login" name="login" value="<?= htmlspecialchars($usuario['login'] ?? '', ENT_QUOTES, 'UTF-8') ?>" required><br><br>
+    <input type="text" id="login" name="login" maxlength="8" value="<?= htmlspecialchars($usuario['login'] ?? '', ENT_QUOTES, 'UTF-8') ?>" required><br><br>
 
     <label for="email">Email:</label><br>
     <input type="email" id="email" name="email" value="<?= htmlspecialchars($usuario['email'] ?? '', ENT_QUOTES, 'UTF-8') ?>" required><br><br>
