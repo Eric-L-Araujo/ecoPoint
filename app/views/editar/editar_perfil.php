@@ -6,6 +6,13 @@ $data = $controller->editarPerfil();
 
 $usuario = $data['usuario'];
 $mensagem = $data['mensagem'];
+
+//Email (validação com filter_var)
+$email = $dados['email'];
+if (!filter_var($dados['email'], FILTER_VALIDATE_EMAIL)) {
+      echo "<script>alert('E-mail inválido.'); window.history.back();</script>";
+      exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
