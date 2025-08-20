@@ -30,11 +30,11 @@
             <div class="elemento-texto">
                 <h1 id="titulo-ecopoint">Eco Point</h1>
                 <p id="paragrafo-ecopoint">Soluções responsáveis para o descarte eletrônico</p>
-                <div id="elemento-botao">
+                <!--<div id="elemento-botao">
                     <button type="button" id="btn-comece">
                         Comece aqui
                     </button>
-                </div>
+                </div>-->
             </div>
         </section>
         <section class="sessao-noticias">
