@@ -89,7 +89,7 @@
                     
                     <div class="campo">
                         <label for="campousuario"> Nome de usuario </label>
-                        <input type="text" id="campousuario" name="login" placeholder="Crie seu usuário" maxlength="6" size="50">
+                        <input type="text" id="campousuario" name="login" placeholder="Crie seu usuário" maxlength="8" size="50">
                     </div>
             
                     <div class="campo">
