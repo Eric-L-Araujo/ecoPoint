@@ -106,9 +106,9 @@
                 </section>
             
                 <section id="botoes">
-                    <button type="submit">Cadastrar</button>
-                    <button type="button" onclick="window.location.href='<?= BASE_URL ?>/home'"> Voltar </button>
+                    <button type="button" onclick="window.location.href='<?= BASE_URL ?>/home'">Voltar</button>
                     <button type="reset" id="botaolimpar">Limpar</button>
+                    <button type="submit">Cadastrar</button>
                 </section>
             </form>
         </section>
