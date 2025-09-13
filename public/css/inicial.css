@@ -198,6 +198,7 @@ button:hover, .lermais:hover {
 
 
 p { /*O texto escrito no site*/
+  margin-left: 60px;
   font-size: 127%; /*Tamanho do texto*/
   font-family: 'Montserrat', 'Arial', 'Times New Roman', Times, serif;/*Fonte*/
   flex: 1; /*Alinha espaços*/
@@ -205,13 +206,12 @@ p { /*O texto escrito no site*/
   
 
 h1 { /*Título do site*/
-  color: #468749; /*Cor do texto*/
   font-size: 250%; /*Tamanho da fonte*/
 }
 
 
 h2 {
-  color: #468749; /*Cor do texto*/
+  color: white; /*Cor do texto*/
   font-size: 240%; /*Tamanho da fonte*/
   margin-left: 5%; /*Move o título 5% para a esquerda*/
 }
