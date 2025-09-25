@@ -20,15 +20,14 @@ O EcoPoint nasceu da necessidade de tornar o processo de reciclagem mais acessí
     * HTML5
     * CSS3
     * JavaScript
-    * (Mencione frameworks como React, Vue.js, ou bibliotecas como Bootstrap, se usou)
 * **Backend:**
     * PHP
 * **Banco de Dados:**
     * MySQL
 * **Controle de Versão:**
     * Git / GitHub
-    * Visual Studio Code
 * **Outras Ferramentas/Bibliotecas:**
+    *  Visual Studio Code    
     * API ViaCEP (Para a busca do CEP)
     * API Leaflet (Para o mapa interativo)
     * API quiz (API integrada junto com o PHP e Banco de dados)
@@ -52,7 +51,7 @@ Para configurar e rodar o EcoPoint em sua máquina local, siga os passos abaixo:
     * Importe o script SQL inicial (`ecopoint.sql`).
     * Configure as credenciais do banco de dados no arquivo de configuração.
 4.  **Acesse no navegador:**
-    Abra seu navegador e acesse `http://localhost`.
+    Abra seu navegador e acesse `http://localhost/ecoPoint`.
     
 
 ## 👥 Equipe
