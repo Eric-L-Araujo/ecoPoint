@@ -55,7 +55,7 @@ Para configurar e rodar o EcoPoint em sua máquina local, siga os passos abaixo:
     Abra seu navegador e acesse `http://localhost`.
     
 
-## 👥 Equipe (Se for um projeto em grupo, liste os membros)
+## 👥 Equipe
 
 * Alessandra Cristina da Silva Pereira (https://github.com/alessandrasilvap)
 * Bryan Caristiati Costa (https://github.com/Bryan22890)
