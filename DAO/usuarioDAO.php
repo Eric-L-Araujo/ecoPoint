@@ -5,6 +5,7 @@ require_once(__DIR__ . '/conexao.php');
 class UsuarioDAO {
     private $conn;
 
+
     public function __construct() {
         $this->conn = Conexao::getConexao(); //Função de conexão com o banco
     }

@@ -15,7 +15,7 @@
 </head>
 <body class="conteudo">
      <header>
-         <img src="./public/imagens/logo-ecopoint-white.png" alt="logo do ecopoint" id="logo">
+        <img src="./public/imagens/logo-ecopoint-white.png" alt="logo do ecopoint" id="logo">
         <nav>
             <div id="borda-menu">
                 <a href="<?= BASE_URL ?>/sobre" class="link selecionado">Sobre Nós</a>
@@ -29,6 +29,7 @@
                         <?php echo htmlspecialchars($_SESSION['usuario']['login']); ?>
                         <i class="bi bi-caret-down-fill"></i>
                     </a>
+
                     <div class="user-submenu">
                         <a href="/ecoPoint/app/views/editar/editar_perfil.php"><i class="bi bi-pencil-fill"></i> Editar Perfil</a>
                         <a href="/ecoPoint/logout"><i class="bi bi-box-arrow-in-left"></i> Logout</a>
@@ -38,38 +39,40 @@
             </div>
         </nav>
     </header>
-    <main>
-        <h1 id="titulo">Sobre Nós</h1>
-        <section id="elementos">
 
+    <main>
+        <h1 id="titulo">Bem-vindos ao EcoPoint!</h1>
+        <section id="elementos">
             <section id="container-img">
-                <img src="./public/imagens/reciclagem-simbolo2.png" alt="">
+                <img src="https://media-public.canva.com/olOkE/MAFoqEolOkE/1/tl.png" alt="Reciclável">
             </section>
+
             <section id="container-sobrenos">
-                <h2>Bem-vindos ao Eco Point!</h2>
                 <p>Este projeto nasceu na Unisuam, no curso de Análise e Desenvolvimento de Sistemas, com a missão de ir além do ambiente acadêmico.</p>
                 <p>Somos movidos pela sustentabilidade e pela tecnologia, acreditando que pequenas ações podem gerar grandes mudanças. Nosso foco é conscientizar sobre o descarte correto de resíduos eletrônicos, como celulares, computadores e eletrodomésticos, promovendo a reciclagem e o reaproveitamento de materiais.</p>
                 <p>Criamos este site para facilitar o acesso a pontos de coleta e estimular práticas mais responsáveis com o meio ambiente. Também realizamos campanhas e parcerias para informar e engajar a comunidade.</p>
                 <p>Juntos, podemos construir um futuro mais verde e saudável.</p>
             </section>
-
         </section>
-        <img src="/ecoPoint/public/imagens/fotosobrenos.jpg" alt="Imagem ilustrativa do site Unsplash">
-        <h2>Nossos Pilares</h2>
 
-        <p>O Eco Point se baseia em três pilares principais:</p>
+        <section id="containerU-img">
+            <img src="./public/imagens/reciclagem-simbolo2.png" alt="Reciclável">
+        </section>
 
-        <p><strong>Conscientização:</strong> Promovemos palestras e campanhas educativas para informar sobre os impactos do lixo eletrônico e incentivar práticas sustentáveis.</p>
+        <h2>Conheça um pouco dos nossos pilares</h2>
+        <p>O Eco Point se baseia em três principais pilares:</p>
 
-        <p><strong>Coleta e Reciclagem:</strong> Estabelecemos pontos de coleta em parceria com empresas e instituições, facilitando o descarte correto de eletrônicos.</p>
+        <ol>
+            <li><p><strong>Conscientização:</strong> Promovemos palestras e campanhas educativas para informar sobre os impactos do lixo eletrônico e incentivar práticas sustentáveis.</p></li>
+            <li><p><strong>Coleta e Reciclagem:</strong> Estabelecemos pontos de coleta em parceria com empresas e instituições, facilitando o descarte correto de eletrônicos.</p></li>
+            <li><p><strong>Inovação e Pesquisa:</strong> Buscamos constantemente novas soluções para aprimorar a reciclagem e o reaproveitamento de componentes eletrônicos.</p></li>
+        </ol>
 
-        <p><strong>Inovação e Pesquisa:</strong> Buscamos constantemente novas soluções para aprimorar a reciclagem e o reaproveitamento de componentes eletrônicos.</p>
-
+        <br>
         <h2>Nosso Compromisso</h2>
-
         <p>Estamos empenhados em reduzir o impacto ambiental e fortalecer a cultura da responsabilidade ecológica. Acreditamos que cada atitude conta — e que juntos podemos transformar o mundo.</p>
-
         <p>Participe com a gente!</p>
+        <br><br>
     </main>
         
     <footer>
@@ -84,6 +87,7 @@
                     <li class="nome">Gabriel Araújo de Oliveira</li>
                 </ul>
             </div>
+
             <div class="contatos">
                 <h3 class="contatos">Contatos</h3>
                 <div>
@@ -91,10 +95,12 @@
                         <i class="fas fa-phone"></i>
                         <span>(21) 96444-3878</span>
                     </div>
+
                     <div class="contact-item">
                         <i class="fab fa-instagram"></i>
                         <span>@ecopoint_recicle</span> 
                     </div>
+
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <span>ecopointverde@gmail.com</span>
@@ -107,8 +113,9 @@
     <!--Menu de Acessibilidade-->
     <div id="menu-acessibilidade" class="menu-acessibilidade">
         <div class="btnAbre" onclick="toggleAcessMenu()">
-        <span class="material-symbols-outlined">accessible_forward</span>
+            <span class="material-symbols-outlined">accessible_forward</span>
         </div>
+
         <div id="painel-acessibilidade" class="painel-acessibilidade">
             <button id="increaseFont">Aumentar Fonte</button>
             <button id="decreaseFont">Diminuir Fonte</button>
@@ -121,11 +128,13 @@
             <button onclick="enviarFeedbackAceb()">Enviar Feedback</button>
         </div>
     </div>
+
     <!--Menu de Feedback-->
     <div id="menu-feedback" class="menu-feedback">
         <div class="btnFeedback" onclick="toggleFeedbackMenu()">
-        <span class="material-symbols-outlined">feedback</span>
+            <span class="material-symbols-outlined">feedback</span>
         </div>
+
         <div id="painel-feedback" class="painel-feedback">
             <h3>Deixe seu Feedback</h3>
             <p>Nosso site visa a mudança, nada melhor do que você nós ajudar de pertinho.
@@ -135,6 +144,7 @@
             <button onclick="enviarFeedback()">Enviar Feedback</button>
         </div>
     </div>
+    
     <script src="/ecoPoint/public/js/acessibfeedback.js"></script> <!--Código JS do painel de acessibilidade e da caixa de feedback-->
 </body>
 </html>

@@ -21,12 +21,15 @@
             <a href="<?= BASE_URL ?>/cadastro" class="link">Cadastre-se</a>
         </nav>
     </header>
-    <div class="bolinha">
-    </div>
+
+    <div class="bolinha"></div>
+
     <div class="bolinha-dois">
+
     </div>
         <section class="elementos">
             <img src="./public/imagens/logo-ecopoint-dark.png" alt="imagem da logo aqui" class="logo">
+            
             <div class="elemento-texto">
                 <h1 id="titulo-ecopoint">Eco Point</h1>
                 <p id="paragrafo-ecopoint">Soluções responsáveis para o descarte eletrônico</p>
@@ -39,6 +42,7 @@
         </section>
         <section class="sessao-noticias">
             <h1>O que acontece no mundo sustentável</h1>
+            
             <div class="card-container">
                 <div class="card">
                     <img src="/ecoPoint/public/imagens/lixo-eletronico.jpg" alt="">
@@ -47,6 +51,7 @@
                         <a href="https://monitormercantil.com.br/brasil-e-o-maior-gerador-de-residuos-eletronicos-na-america-do-sul/" class="btn" target="_blank">Ler mais</a>
                     </div>
                 </div>
+
                 <div class="card">
                     <img src="/ecoPoint/public/imagens/agenda-2030.jpg" alt="">
                     <div class="card-content">
@@ -55,6 +60,7 @@
                         <a href="https://portal.stf.jus.br/hotsites/agenda-2030/" class="btn" target="_blank">Ler mais</a>
                     </div>
                 </div>
+
                 <div class="card">
                     <img src="/ecoPoint/public/imagens/imglink3.png" alt="" id="img-size">
                     <div class="card-content">
@@ -63,6 +69,7 @@
                         <a href="https://g1.globo.com/jornal-nacional/noticia/2023/12/09/maior-parte-do-lixo-eletronico-do-brasil-e-descartada-irregularmente-mas-poderia-ser-reciclada.ghtml" class="btn" target="_blank">Ler mais</a>
                     </div>
                 </div>
+
                 <div class="card" onclick="alternarNotícias(this)">
                     <img src="/ecoPoint/public/imagens/imglink4.png" alt="">
                     <div class="card-content">
@@ -71,6 +78,7 @@
                         <a href="https://www.cnnbrasil.com.br/tecnologia/lixo-eletronico-chegou-a-nivel-recorde-entenda-o-problema/" class="btn" target="_blank">Ler mais</a>
                     </div>
                 </div>
+
                 <div class="card" onclick="alternarNotícias(this)">
                     <img src="/ecoPoint/public/imagens/imglink5.png" alt="">
                     <div class="card-content">
@@ -79,6 +87,7 @@
                         <a href="" class="btn" target="_blank">Ler mais</a>
                     </div>
                 </div>
+
                 <div class="card" onclick="alternarNotícias(this)">
                     <img src="/ecoPoint/public/imagens/imglink6.png" alt="">
                     <div class="card-content">
@@ -87,6 +96,7 @@
                         <a href="https://circulare.com.br/reciclagem-de-residuos-beneficios-parceiro-circulare/" class="btn" target="_blank">Ler mais</a>
                     </div>
                 </div>
+
                 <div class="card" onclick="alternarNotícias(this)">
                     <img src="/ecoPoint/public/imagens/imglink7.png" alt="">
                     <div class="card-content">
@@ -95,6 +105,7 @@
                         <a href="https://sucatadigital.com.br/qual-e-a-legislacao-no-brasil-que-trata-da-gestao-do-lixo-eletronico/" class="btn" target="_blank">Ler mais</a>
                     </div>
                 </div>
+
                 <div class="card" onclick="alternarNotícias(this)">
                     <img src="/ecoPoint/public/imagens/imglink8.png" alt="">
                     <div class="card-content">
@@ -103,6 +114,7 @@
                         <a href="https://www.jb.com.br/brasil/meio-ambiente/2024/03/1049208-producao-mundial-de-lixo-eletronico-e-cinco-vezes-maior-do-que-sua-reciclagem-diz-onu.html" class="btn" target="_blank">Ler mais</a>
                     </div>
                 </div>
+
                 <div class="card" onclick="alternarNotícias(this)">
                     <img src="/ecoPoint/public/imagens/imglink12.png" alt="">
                     <div class="card-content">
@@ -113,60 +125,69 @@
                 </div>
             </div>
         </section>
+
         <!--QUIZ-->
         <h2 id="quiz">Quiz Eco Point</h2>
         <p>Teste seu conhecimento sobre Reciclagem eletrônica! Você pode ser tornar um especialista no assunto. Participe do nosso Quiz Eco Point e descubra como você pode fazer a diferença!</p>
         <br>
         <div class="quiz-container">
             <button class="start-quiz button">Iniciar Quiz</button>
+            
             <div class="questions-container hide">
                 <h2 class="question"></h2>
                 <div class="answers-container"></div>
                 <button class="next-question button hide">Próxima pergunta</button>
             </div>
         </div>
+
         <script>
             const questions = <?= json_encode($perguntas); ?>;
         </script>
         <br>
         <br>
-        <footer>
-            <div class="footer-container">
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3 class="integrantes">Integrantes</h3>
+                <ul class="lista">
+                    <li class="nome">Alessandra Cristina da Silva Pereira</li>
+                    <li class="nome">Bryan Caristiati Costa</li>
+                    <li class="nome">Eric Luiz Xavier de Araujo</li>
+                    <li class="nome">Daniel Jesus Dias Alves</li>
+                    <li class="nome">Gabriel Araújo de Oliveira</li>
+                </ul>
+            </div>
+
+            <div class="contatos">
+                <h3 class="contatos">Contatos</h3>
                 <div>
-                    <h3 class="integrantes">Integrantes</h3>
-                    <ul class="lista">
-                        <li class="nome">Alessandra Cristina da Silva Pereira</li>
-                        <li class="nome">Bryan Caristiati Costa</li>
-                        <li class="nome">Eric Luiz Xavier de Araujo</li>
-                        <li class="nome">Daniel Jesus Dias Alves</li>
-                        <li class="nome">Gabriel Araújo de Oliveira</li>
-                    </ul>
-                </div>
-                <div class="contatos">
-                    <h3 class="contatos">Contatos</h3>
-                    <div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>(21) 96444-3878</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-instagram"></i>
-                            <span>@ecopoint_recicle</span> 
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>ecopointverde@gmail.com</span>
-                        </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(21) 96444-3878</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <span>@ecopoint_recicle</span> 
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ecopointverde@gmail.com</span>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
     <!--Menu de Acessibilidade-->
     <div id="menu-acessibilidade" class="menu-acessibilidade">
         <div class="btnAbre" onclick="toggleAcessMenu()">
-        <span class="material-symbols-outlined">accessible_forward</span>
+            <span class="material-symbols-outlined">accessible_forward</span>
         </div>
+
         <div id="painel-acessibilidade" class="painel-acessibilidade">
             <button id="increaseFont">Aumentar Fonte</button>
             <button id="decreaseFont">Diminuir Fonte</button>
@@ -179,11 +200,13 @@
             <button onclick="enviarFeedbackAceb()">Enviar Feedback</button>
         </div>
     </div>
+
     <!--Menu de Feedback-->
     <div id="menu-feedback" class="menu-feedback">
         <div class="btnFeedback" onclick="toggleFeedbackMenu()">
-        <span class="material-symbols-outlined">feedback</span>
+            <span class="material-symbols-outlined">feedback</span>
         </div>
+
         <div id="painel-feedback" class="painel-feedback">
             <h3>Deixe seu Feedback</h3>
             <p>Nosso site visa a mudança, nada melhor do que você nós ajudar de pertinho.
@@ -193,6 +216,7 @@
             <button onclick="enviarFeedback()">Enviar Feedback</button>
         </div>
     </div>
+    
     <script src="/ecoPoint/public/js/acessibfeedback.js"></script> <!--Código JS do painel de acessibilidade e da caixa de feedback-->
     <script src="/ecoPoint/public/js/validacaoquiz.js"></script>  <!--Código JS da validação do quiz todo-->
     <script src="/ecoPoint/public/js/validacaoinicial.js"></script>  <!--Código JS da validação do site todo-->

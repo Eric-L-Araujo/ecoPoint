@@ -5,6 +5,7 @@ require_once(__DIR__ . '/conexao.php');
 class Quiz {
     private $conn;
 
+
     public function __construct() {
         $this->conexao = Conexao::getConexao();
     }

@@ -162,6 +162,6 @@ label {
 @media(max-width: 344px) {
     #menu-feedback {
         position: fixed; /*Fixa o menu no lugar*/
-        right: 10px;
+        right: 10px; /*Move ambos os button 24px para a direita*/
     }
 }

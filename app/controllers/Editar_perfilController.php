@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 require_once __DIR__ . '/../../DAO/conexao.php';
 require_once __DIR__ . '/../../DAO/usuarioDAO.php';
@@ -79,6 +80,4 @@ class UsuarioController {
     }
 }
 
-
-
-
+?>

@@ -14,11 +14,11 @@
         <h1>Cadastre-se</h1>
         <p>Entre em um mundo mais verde</p>
     </header>
-    <div class="bolinha">
-    </div>
+
+    <div class="bolinha"></div>
+
     <main>
         <section id="container">
-            
             <form action="/ecoPoint/cadastro/salvar" method="POST" id="formCadastro" name="formulariocadastro">
                 <h2 class="titulos">Informações pessoais</h2>
                 <section id="informacoes-pessoais">
@@ -37,6 +37,7 @@
                         <label for="inserirEmail"> Email </label>
                         <input type="email" id="inserirEmail" name="email" placeholder="exemplo@provedor.com" size="50" oninput="validarEmail(this)">
                     </div>
+
                     <div class="campo">
                         <label for="cpf"> CPF </label>
                         <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" size="50" oninput="formatarCPF(this)">
@@ -50,6 +51,7 @@
                         <label for="cep"> CEP </label>
                         <input type="text" id="cep" name="cep" placeholder="00000-000" required oninput="formatarCEP(this)">
                     </div> <!--Reandonly faz com que o campo esteja habilidado, mas não pode ser editado-->
+                    
                     <div class="campo">
                         <button type="button" id="buscar">Buscar</button>
                     </div>
@@ -83,6 +85,7 @@
                         <label for="tel"> Telefone </label>
                         <input type="text" id="tel" name="telefone" placeholder="(00) 00000-0000" size="50" oninput="formatarTEL(this)">
                     </div>
+
                 </section>
                 <h2 class="titulos">Informações de acesso</h2>
                 <section id="informacoes-acesso">
@@ -101,23 +104,26 @@
                         <label for="camposenha"> Senha </label>
                         <input type="password" id="camposenha" name="senha" placeholder="Crie sua senha" minlength="6" maxlength="10" size="50">
                     </div>
-            
-                    
+
                 </section>
             
                 <section id="botoes">
+
                     <button type="button" onclick="window.location.href='<?= BASE_URL ?>/home'">Voltar</button>
                     <button type="reset" id="botaolimpar">Limpar</button>
                     <button type="submit">Cadastrar</button>
+
                 </section>
             </form>
         </section>
     </main>
+
     <!--Menu de Acessibilidade-->
     <div id="menu-acessibilidade" class="menu-acessibilidade">
         <div class="btnAbre" onclick="toggleAcessMenu()">
-        <span class="material-symbols-outlined">accessible_forward</span>
+            <span class="material-symbols-outlined">accessible_forward</span>
         </div>
+
         <div id="painel-acessibilidade" class="painel-acessibilidade">
             <button id="increaseFont">Aumentar Fonte</button>
             <button id="decreaseFont">Diminuir Fonte</button>
@@ -130,11 +136,13 @@
             <button onclick="enviarFeedbackAceb()">Enviar Feedback</button>
         </div>
     </div>
+
     <!--Menu de Feedback-->
     <div id="menu-feedback" class="menu-feedback">
         <div class="btnFeedback" onclick="toggleFeedbackMenu()">
-        <span class="material-symbols-outlined">feedback</span>
+            <span class="material-symbols-outlined">feedback</span>
         </div>
+
         <div id="painel-feedback" class="painel-feedback">
             <h3>Deixe seu Feedback</h3>
             <p>Nosso site visa a mudança, nada melhor do que você nós ajudar de pertinho.
@@ -144,6 +152,7 @@
             <button onclick="enviarFeedback()">Enviar Feedback</button>
         </div>
     </div>
+    
     <script src="/ecoPoint/public/js/validacaocadastro.js"></script> <!--Código JS da validação do site todo-->
     <script src="/ecoPoint/public/js/acessibfeedback.js"></script> <!--Código JS do painel de acessibilidade e da caixa de feedback-->
 </body>

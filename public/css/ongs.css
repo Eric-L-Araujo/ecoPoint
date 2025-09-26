@@ -1,15 +1,31 @@
 .imagree {
-  width: 100px; /*Largura*/
-  height: 100px; /*Altura*/
-  padding: 5px; /*Espaçamento entre o conteudo e borda*/
+  width: 200px; /*Largura*/
+  height: 150px; /*Altura*/
+  padding: 10px; /*Espaçamento entre o conteudo e borda*/
   float: right; /*Posiciona um elemento no lado direito do seu contêiner*/
+  margin: 0 50px;
 }
 
 
-p, ol { /*O texto escrito no site*/
-  font-size: 127%; /*Tamanho das teras*/
+.icone {
+  width: 25px; /*Largura*/
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+p { /*O texto escrito no site*/
+  font-size: 22px; /*Tamanho das teras*/
   font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
-  margin: 20px; /*Margem lateral*/
+  margin-left: 35px;
+  margin-right: 60px;
+  padding: 10px;
+}
+
+
+ol {
+  font-size: 19px;
+  margin-left: 40px;
 }
 
 
@@ -17,6 +33,13 @@ h1 { /*Título do site*/
   color: #468749; /*Cor do texto*/
   font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
   font-size: 250%; /*Tamanho da fonte*/
+  margin-left: 40px;
+}
+
+
+h3 {
+  margin-left: 40px;
+  color: #468749;
 }
 
 
@@ -48,6 +71,7 @@ footer { /*Rodape completo*/
 .lista { /*Lista dos nomes */
   list-style-type: none; /*Remove o marcador de lista*/
   padding: 0; /*Espaçamento entre o conteudo e borda*/
+  margin-right: 150px;
 }
 
 

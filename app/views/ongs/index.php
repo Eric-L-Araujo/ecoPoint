@@ -15,7 +15,7 @@
 </head>
 <body class="conteudo">
    <header>
-         <img src="./public/imagens/logo-ecopoint-white.png" alt="logo do ecopoint" id="logo">
+        <img src="./public/imagens/logo-ecopoint-white.png" alt="logo do ecopoint" id="logo">
         <nav>
             <div id="borda-menu">
                 <a href="<?= BASE_URL ?>/sobre" class="link ">Sobre Nós</a>
@@ -29,6 +29,7 @@
                         <?php echo htmlspecialchars($_SESSION['usuario']['login']); ?>
                         <i class="bi bi-caret-down-fill"></i>
                     </a>
+
                     <div class="user-submenu">
                         <a href="/ecoPoint/app/views/editar/editar_perfil.php"><i class="bi bi-pencil-fill"></i> Editar Perfil</a>
                         <a href="/ecoPoint/logout"><i class="bi bi-box-arrow-in-left"></i> Logout</a>
@@ -38,21 +39,29 @@
             </div>
         </nav>
     </header>
+
     <main>
         <section>
             <h1>ONG's</h1>
             <p>As ONGs de reciclagem eletrônica desempenham um papel importante na sustentabilidade, promovendo a coleta e o reaproveitamento de equipamentos eletrônicos. Elas trabalham para reduzir o impacto ambiental, conscientizar a população e facilitar o descarte correto de produtos eletrônicos, muitas vezes oferecendo oficinas, campanhas educativas e programas de reaproveitamento.</p>
             <br>
-            <p>Algumas ONGs conhecidas nesse campo incluem:</p> <img class="imagree" src="/ecoPoint/public/imagens/canvain.png" alt="Recicle">
+            <h3><img class="icone" src="https://media-public.canva.com/NtyrM/MAB2siNtyrM/2/tl.png" alt="Reciclável"> Algumas ONGs conhecidas nesse campo incluem:</h3> <img class="imagree" src="https://media-public.canva.com/-7SDU/MAF-xx-7SDU/1/tl.png" alt="Recicle">
+            <br>
+
             <ol>
                 <li><strong>Recicla Sampa</strong> - Focada na coleta e reciclagem de eletrônicos em São Paulo.</li>
                 <li><strong>E-Lixo</strong> - Realiza a coleta de equipamentos eletrônicos para reaproveitamento e reciclagem.</li>
                 <li><strong>Instituto Jogue Limpo</strong> - Promove ações de educação ambiental e reciclagem de eletrônicos.</li>
-                <li><strong>Eco Point</strong> - Com certeza! Nosso projeto realiza a coleta em diversas regiões do Rio de Janeiro. Entre em contato para obter mais informações sobre como participar.⁠</li>
+                <li><strong>Eco Point</strong> - Com certeza não podia faltar! Nosso projeto realiza a coleta em diversas regiões do Rio de Janeiro. ⁠</li>
             </ol>
+
+            <br>
+            <p>Não se esqueça de entrar em contato para obter mais informações sobre como participar!</p>
             <p>Essas organizações muitas vezes colaboram com empresas e governos para desenvolver iniciativas que incentivem a reciclagem e o descarte responsável.</p>
         </section>
+        <br><br>
     </main>
+
     <footer>
         <div class="footer-container">
             <div>
@@ -65,6 +74,7 @@
                     <li class="nome">Gabriel Araújo de Oliveira</li>
                 </ul>
             </div>
+
             <div class="contatos">
                 <h3 class="contatos">Contatos</h3>
                 <div>
@@ -72,10 +82,12 @@
                         <i class="fas fa-phone"></i>
                         <span>(21) 96444-3878</span>
                     </div>
+
                     <div class="contact-item">
                         <i class="fab fa-instagram"></i>
                         <span>@ecopoint_recicle</span> 
                     </div>
+
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <span>ecopointverde@gmail.com</span>
@@ -88,8 +100,9 @@
     <!--Menu de Acessibilidade-->
     <div id="menu-acessibilidade" class="menu-acessibilidade">
         <div class="btnAbre" onclick="toggleAcessMenu()">
-        <span class="material-symbols-outlined">accessible_forward</span>
+            <span class="material-symbols-outlined">accessible_forward</span>
         </div>
+        
         <div id="painel-acessibilidade" class="painel-acessibilidade">
             <button id="increaseFont">Aumentar Fonte</button>
             <button id="decreaseFont">Diminuir Fonte</button>
@@ -102,11 +115,13 @@
             <button onclick="enviarFeedbackAceb()">Enviar Feedback</button>
         </div>
     </div>
+
     <!--Menu de Feedback-->
     <div id="menu-feedback" class="menu-feedback">
         <div class="btnFeedback" onclick="toggleFeedbackMenu()">
-        <span class="material-symbols-outlined">feedback</span>
+            <span class="material-symbols-outlined">feedback</span>
         </div>
+
         <div id="painel-feedback" class="painel-feedback">
             <h3>Deixe seu Feedback</h3>
             <p>Nosso site visa a mudança, nada melhor do que você nós ajudar de pertinho.
@@ -116,6 +131,7 @@
             <button onclick="enviarFeedback()">Enviar Feedback</button>
         </div>
     </div>
+    
     <script src="/ecoPoint/public/js/acessibfeedback.js"></script> <!--Código JS do painel de acessibilidade e da caixa de feedback-->
 </body>
 </html>

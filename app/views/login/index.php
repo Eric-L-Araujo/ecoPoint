@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/> <!--Google Material Symbols-->
 </head>
 <body class="conteudo">
-        <section id="logo">
-            <img src="./public/imagens/logo-ecopoint-dark.png" alt="imagem da logo aqui" class="imagem-logo">
-            <p class="texto-logo">Conecte-se para fazer a diferença</p>
-        </section>
+    <section id="logo">
+        <img src="./public/imagens/logo-ecopoint-dark.png" alt="imagem da logo aqui" class="imagem-logo">
+        <p class="texto-logo">Conecte-se para fazer a diferença</p>
+    </section>
+
     <div id="conteudo">
         <form action="/ecoPoint/login/autenticar" method="POST" autocomplete="on" target="_blank" novalidate class="form">
             <?php if (isset($_SESSION['erro_login'])): ?>
@@ -44,16 +45,15 @@
     
         </form>
 
-        <div id="mensagemErro" style="display: none; color: white; background-color: #d9534f; padding: 10px; border-radius: 5px; margin-top: 15px; text-align: center;">
-        <!--A mensagem será preenchida via JavaScript-->
-        </div>
-
+        <div id="mensagemErro" style="display: none; color: white; background-color: #d9534f; padding: 10px; border-radius: 5px; margin-top: 15px; text-align: center;"><!--A mensagem será preenchida via JavaScript--></div>
     </div>
+
     <!--Menu de Acessibilidade-->
     <div id="menu-acessibilidade" class="menu-acessibilidade">
         <div class="btnAbre" onclick="toggleAcessMenu()">
-        <span class="material-symbols-outlined">accessible_forward</span>
+            <span class="material-symbols-outlined">accessible_forward</span>
         </div>
+
         <div id="painel-acessibilidade" class="painel-acessibilidade">
             <button id="increaseFont">Aumentar Fonte</button>
             <button id="decreaseFont">Diminuir Fonte</button>
@@ -66,11 +66,13 @@
             <button onclick="enviarFeedbackAceb()">Enviar Feedback</button>
         </div>
     </div>
+
     <!--Menu de Feedback-->
     <div id="menu-feedback" class="menu-feedback">
         <div class="btnFeedback" onclick="toggleFeedbackMenu()">
-        <span class="material-symbols-outlined">feedback</span>
+            <span class="material-symbols-outlined">feedback</span>
         </div>
+        
         <div id="painel-feedback" class="painel-feedback">
             <h3>Deixe seu Feedback</h3>
             <p>Nosso site visa a mudança, nada melhor do que você nós ajudar de pertinho.
