@@ -1,3 +1,6 @@
+
+<img width="1920" height="1080" alt="Protótipo de site Projeto EcoPoint (novo design)" src="https://github.com/user-attachments/assets/839f6ca4-d5cc-4556-9b70-b058edf1355d" />
+
 # ♻️ EcoPoint
 
 Um sistema web colaborativo desenvolvido para conectar usuários a pontos de coleta de materiais recicláveis, promovendo a sustentabilidade e facilitando o descarte consciente.
